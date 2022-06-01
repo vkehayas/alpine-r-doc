@@ -1,4 +1,4 @@
-FROM skyzyx/alpine-pandoc:1.2.0
+FROM pandoc/core
 
 RUN apk upgrade --update
 RUN apk add --no-cache gcc g++ linux-headers
