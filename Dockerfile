@@ -1,7 +1,7 @@
 FROM alpine:3.8
 
 RUN apk upgrade --update
-RUN apk add --no-cache gcc g++
+RUN apk add --no-cache gcc g++ linux-headers
 RUN apk add R R-dev --no-cache
 
 RUN wget https://gitlab.com/ConorIA/alpine-pandoc/raw/master/conor@conr.ca-584aeee5.rsa.pub -O /etc/apk/keys/conor@conr.ca-584aeee5.rsa.pub
